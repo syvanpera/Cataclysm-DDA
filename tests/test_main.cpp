@@ -19,6 +19,10 @@
 #define CATCH_CONFIG_RUNNER
 #include "catch/catch.hpp"
 
+#ifdef _WIN32
+#include <windows.h>
+#endif
+
 #include <cassert>
 #include <chrono>
 #include <cstdio>
@@ -256,6 +260,12 @@ CATCH_REGISTER_LISTENER( CataListener )
 
 int main( int argc, const char *argv[] )
 {
+#ifdef _WIN32
+    // A Win32 call intended to stop failed assertions from opening a dialog
+    // box, which is problematic on Travis
+    SetErrorMode( SEM_NOGPFAULTERRORBOX );
+#endif
+
     Catch::Session session;
 
     std::vector<const char *> arg_vec( argv, argv + argc );
