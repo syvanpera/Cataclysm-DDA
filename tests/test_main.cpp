@@ -263,7 +263,10 @@ int main( int argc, const char *argv[] )
 #ifdef _WIN32
     // A Win32 call intended to stop failed assertions from opening a dialog
     // box, which is problematic on Travis
-    SetErrorMode( SEM_NOGPFAULTERRORBOX );
+    if( !IsDebuggerPresent() ) {
+          _CrtSetReportMode( _CRT_ASSERT, _CRTDBG_MODE_FILE | _CRTDBG_MODE_DEBUG );
+          _CrtSetReportFile( _CRT_ASSERT, _CRTDBG_FILE_STDERR );
+    }
 #endif
 
     Catch::Session session;
