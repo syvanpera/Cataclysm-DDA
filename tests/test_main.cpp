@@ -265,8 +265,9 @@ int main( int argc, const char *argv[] )
     // A Win32 call intended to stop failed assertions from opening a dialog
     // box, which is problematic on Travis
     if( !IsDebuggerPresent() ) {
-          _CrtSetReportMode( _CRT_ASSERT, _CRTDBG_MODE_FILE | _CRTDBG_MODE_DEBUG );
-          _CrtSetReportFile( _CRT_ASSERT, _CRTDBG_FILE_STDERR );
+        #pragma GCC diagnostic ignored "-Wunused-value"
+        _CrtSetReportMode( _CRT_ASSERT, _CRTDBG_MODE_FILE | _CRTDBG_MODE_DEBUG );
+        _CrtSetReportFile( _CRT_ASSERT, _CRTDBG_FILE_STDERR );
     }
 #endif
 
