@@ -13,7 +13,7 @@
 #include <cstdio>
 #define cata_assert(_Expression) \
     (void) \
-    ( ( !!( _Expression ) ) || ( fprintf( stderr, "%s, %s, %s\n", #_Expression, __FILE__, __LINE__ ) && \
+    ( ( !!( _Expression ) ) || ( fprintf( stderr, "%s, %s, %d\n", #_Expression, __FILE__, __LINE__ ) && \
                                  std::exit( -1 ) ) )
 #else
 #include <cassert>
