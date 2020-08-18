@@ -1,7 +1,6 @@
 #include "crafting.h"
 
 #include <algorithm>
-#include <cassert>
 #include <climits>
 #include <cmath>
 #include <cstdlib>
@@ -20,6 +19,7 @@
 #include "avatar.h"
 #include "bionics.h"
 #include "calendar.h"
+#include "cata_assert.h"
 #include "cata_utility.h"
 #include "character.h"
 #include "colony.h"

@@ -20,7 +20,7 @@ advanced_inv_listitem::advanced_inv_listitem( item *an_item, int index, int coun
     , from_vehicle( from_vehicle )
 {
     items.push_back( an_item );
-    assert( stacks >= 1 );
+    cata_assert( stacks >= 1 );
 }
 
 advanced_inv_listitem::advanced_inv_listitem( const std::vector<item *> &list, int index,
@@ -38,5 +38,5 @@ advanced_inv_listitem::advanced_inv_listitem( const std::vector<item *> &list, i
     cat( &list.front()->get_category_of_contents() ),
     from_vehicle( from_vehicle )
 {
-    assert( stacks >= 1 );
+    cata_assert( stacks >= 1 );
 }

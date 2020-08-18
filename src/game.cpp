@@ -2,7 +2,6 @@
 
 #include <algorithm>
 #include <bitset>
-#include <cassert>
 #include <chrono>
 #include <climits>
 #include <cmath>
@@ -38,6 +37,7 @@
 #include "basecamp.h"
 #include "bionics.h"
 #include "bodypart.h"
+#include "cata_assert.h"
 #include "cata_utility.h"
 #include "cata_variant.h"
 #include "catacharset.h"

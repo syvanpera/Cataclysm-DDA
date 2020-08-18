@@ -7,7 +7,6 @@
 #ifndef CATA_NO_STL
 
 #include <array>
-#include <cassert>
 #include <climits>
 #include <cstdint>
 #include <cstdlib>
@@ -16,9 +15,10 @@
 #include <string>
 #include <vector>
 
+#include "cata_assert.h"
 #else
 
-#define assert(...)
+#define cata_assert(...)
 
 namespace std
 {

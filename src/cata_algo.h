@@ -115,7 +115,7 @@ std::vector<std::vector<T>> find_cycles( const std::unordered_map<T, std::vector
         on_current_branch.emplace( root, root );
         find_cycles_impl( edges, root, visited, on_current_branch, result );
         on_current_branch.erase( root );
-        assert( on_current_branch.empty() );
+        cata_assert( on_current_branch.empty() );
     }
 
     return result;

@@ -193,7 +193,7 @@ void advanced_inv_area::init()
 units::volume advanced_inv_area::free_volume( bool in_vehicle ) const
 {
     // should be a specific location instead
-    assert( id != AIM_ALL );
+    cata_assert( id != AIM_ALL );
     if( id == AIM_INVENTORY || id == AIM_WORN ) {
         return get_player_character().free_space();
     }
