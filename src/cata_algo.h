@@ -3,10 +3,11 @@
 #define CATA_SRC_CATA_ALGO_H
 
 #include <algorithm>
-#include <cassert>
 #include <unordered_map>
 #include <unordered_set>
 #include <vector>
+
+#include "cata_assert.h"
 
 namespace cata
 {

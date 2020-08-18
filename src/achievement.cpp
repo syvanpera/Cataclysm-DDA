@@ -1,11 +1,11 @@
 #include "achievement.h"
 
-#include <cassert>
 #include <cstdlib>
 #include <set>
 #include <tuple>
 #include <utility>
 
+#include "cata_assert.h"
 #include "color.h"
 #include "debug.h"
 #include "enums.h"

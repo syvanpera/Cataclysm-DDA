@@ -1,8 +1,8 @@
 #include <algorithm>
-#include <cassert>
 
 #include "advanced_inv_listitem.h"
 #include "auto_pickup.h"
+#include "cata_assert.h"
 #include "item.h"
 
 advanced_inv_listitem::advanced_inv_listitem( item *an_item, int index, int count,

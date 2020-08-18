@@ -4,7 +4,6 @@
 #include <algorithm>
 #include <array>
 #include <bitset>
-#include <cassert>
 #include <cmath>
 #include <cstdint>
 #include <fstream>
@@ -17,6 +16,7 @@
 #include "action.h"
 #include "avatar.h"
 #include "calendar.h"
+#include "cata_assert.h"
 #include "cata_utility.h"
 #include "catacharset.h"
 #include "character.h"

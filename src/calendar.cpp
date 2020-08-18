@@ -2,11 +2,11 @@
 
 #include <algorithm>
 #include <array>
-#include <cassert>
 #include <cmath>
 #include <cstddef>
 #include <limits>
 
+#include "cata_assert.h"
 #include "debug.h"
 #include "enum_conversions.h"
 #include "options.h"

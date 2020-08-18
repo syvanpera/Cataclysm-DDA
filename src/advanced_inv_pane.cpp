@@ -1,5 +1,4 @@
 #include <algorithm>
-#include <cassert>
 #include <cstddef>
 #include <iterator>
 #include <list>
@@ -11,6 +10,7 @@
 #include "advanced_inv_pagination.h"
 #include "advanced_inv_pane.h"
 #include "avatar.h"
+#include "cata_assert.h"
 #include "item.h"
 #include "item_contents.h"
 #include "item_search.h"

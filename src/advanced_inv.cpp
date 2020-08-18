@@ -1,7 +1,6 @@
 #include "advanced_inv.h"
 
 #include <algorithm>
-#include <cassert>
 #include <cstddef>
 #include <initializer_list>
 #include <list>
@@ -17,6 +16,7 @@
 #include "auto_pickup.h"
 #include "avatar.h"
 #include "calendar.h"
+#include "cata_assert.h"
 #include "catacharset.h"
 #include "character.h"
 #include "colony.h"
