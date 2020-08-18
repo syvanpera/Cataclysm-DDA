@@ -89,8 +89,8 @@ struct point {
      * By default rotates around the origin (0, 0).
      * NOLINTNEXTLINE(cata-use-named-point-constants) */
     point rotate( int turns, const point &dim = { 1, 1 } ) const {
-        assert( turns >= 0 );
-        assert( turns <= 4 );
+        cata_assert( turns >= 0 );
+        cata_assert( turns <= 4 );
 
         switch( turns ) {
             case 1:
